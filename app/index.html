@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>php-todo-list-json</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.7.2/axios.min.js"></script>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div id="app">
+        <div class="myContainer">
+            <header>
+                <h1>TOBOOLIST</h1>
+            </header>
+    
+            <ul>
+                <li v-for="stuffs, i in toDo">
+                    {{ stuffs }} 
+                    <span><i class="fa-solid fa-trash-can"></i> <i class="fa-solid fa-check"></i> <i class="fa-solid fa-xmark"></i></span>
+                </li>
+            </ul>
+
+        </div>
+
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+</html>
