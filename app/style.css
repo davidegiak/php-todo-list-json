@@ -68,3 +68,8 @@ ul li:nth-child(even) .fa-solid:hover{
 li:hover .fa-solid{
     opacity: 1;
 }
+
+input {
+    color: #222;
+    outline: none;
+}

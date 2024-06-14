@@ -18,10 +18,12 @@
     
             <ul>
                 <li v-for="stuffs, i in toDo">
-                    {{ stuffs }} 
+                    {{ stuffs.task }} 
                     <span><i class="fa-solid fa-trash-can"></i> <i class="fa-solid fa-check"></i> <i class="fa-solid fa-xmark"></i></span>
                 </li>
             </ul>
+            <input type="text" name="tasks">
+            <button @click="addTask()" type="submit" name="submit" >invia</button>
 
         </div>
 
