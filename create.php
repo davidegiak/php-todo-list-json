@@ -3,12 +3,12 @@
 $fileContent = file_get_contents("data.json");
 
 // CONTROLLO SE HO TUTTO IL NECESSARIO
-if (isset($_POST["tasks"])) {
+if (isset($_POST["task"])) {
     // CONVERTO JSON IN ARRAY
     $tasks = json_decode($fileContent, true);
     //CREO UN NUOVO TASK
     $newTask = [
-        "task" => $_POST["tasks"],
+        "task" => $_POST["task"],
     ];
     // PUSHO IN NEWTASKS
     $tasks[] = $newTask;

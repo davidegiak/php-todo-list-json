@@ -1,11 +1,1 @@
-[
-    {
-        "task":"fai questo",
-        "state":true
-    },
-    {
-        "task":"fai quello",
-        "state":true
-    }
-]
-    
+[{"task":"fai questo","state":true},{"task":"fai quello","state":true},{"task":null},{"task":null},{"task":"cc"}]
