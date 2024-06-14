@@ -16,7 +16,7 @@ createApp({
     addTask() {
 
       const toDoStuff = {
-        task: this.newTask,
+        task: this.addNewTask,
         state: true
       };
 
