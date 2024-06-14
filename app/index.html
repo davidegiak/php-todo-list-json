@@ -22,7 +22,7 @@
                     <span><i class="fa-solid fa-trash-can"></i> <i class="fa-solid fa-check"></i> <i class="fa-solid fa-xmark"></i></span>
                 </li>
             </ul>
-            <input type="text" name="tasks" v-bind="addNewTask">
+            <input type="text" name="tasks" v-model="addNewTask">
             <button @click="addTask()" type="submit" name="submit" >invia</button>
 
         </div>

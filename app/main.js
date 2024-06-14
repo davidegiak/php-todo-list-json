@@ -23,8 +23,7 @@ createApp({
       axios.post('../create.php', toDoStuff, this.postRequestConfig).then(results => {
         console.log("Risultati: ", results.data);
         console.log("aggiungi task", this.addNewTask);
-        this.addNewTask = results.data;
-        return this.addNewTask
+        this.toDo = results.data;
       });
     }
 
