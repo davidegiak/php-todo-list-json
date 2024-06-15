@@ -14,10 +14,9 @@ createApp({
   },
   methods: {
     addTask() {
-
       const toDoStuff = {
-        task: this.addNewTask,
-        state: true
+        task:this.addNewTask,
+        state:true
       };
 
       axios.post('../create.php', toDoStuff, this.postRequestConfig).then(results => {
