@@ -73,3 +73,8 @@ input {
     color: #222;
     outline: none;
 }
+
+.false{
+    text-decoration: line-through;
+}
+

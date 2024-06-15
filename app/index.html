@@ -17,9 +17,9 @@
             </header>
     
             <ul>
-                <li v-for="stuffs, i in toDo">
-                    {{ stuffs.task }} 
-                    <span><i class="fa-solid fa-trash-can"></i> <i class="fa-solid fa-check"></i> <i class="fa-solid fa-xmark"></i></span>
+                <li :class=' (stuffs.state == true) ? "" : "false" '  v-for="stuffs, i in toDo">
+                    {{ stuffs.task }}
+                    <span style="text-decoration: none;"><i @click="deleteTask(i)" class="fa-solid fa-trash-can"></i> <i class="fa-solid fa-check"></i> <i @click="stuffs.state = false" class="fa-solid fa-xmark"></i></span>
                 </li>
             </ul>
             <input type="text" v-model="addNewTask">
